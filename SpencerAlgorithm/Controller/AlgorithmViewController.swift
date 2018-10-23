@@ -29,6 +29,8 @@ public class AlgorithmController : UIViewController
 
     private func formatAlgorithm() -> Void
     {
+        let title : String = "App Creation Algorithm"
+        
         let stepOne : String = "Begin by choosing the single view project option"
         let stepTwo : String = "Organize the playground’s files into three folders: View, Resources, and Controller"
         let stepThree : String = "Relocate your Info.plist file"
@@ -37,7 +39,23 @@ public class AlgorithmController : UIViewController
         
         let algorithm = [stepOne, stepTwo, stepThree, stepFour, stepFive]
         
-        let bullet : String = "🅱️"
+        let attributesDictionary = [NSAttributesStringKey.font : algorithmText.font]
+        let fullAttributesString = NSMutableAttributeString(string: title, attributes: attributesDictionary)
+        
+        for step in algorithm
+        {
+            let bullet : String = "🅱️"
+            let formattedStep : String = "\n\(bullet) \(step)"
+            let attributedStringStep : NSMutableAttributedString = NSMutableAttributedString(string : formattedStep)
+            let outlineStyle = createOutlineSytle()
+            
+            attributedStringStep.addAttributes([NSAttributeString.Key.paragraphStyle : outlineStyle], range: NSMakeRange(0, attributedStringStep.length))
+            
+            fullAttributedString.append(attributedStringStep)
+        }
+    
+        algorithmText.attributedText = fullAttributedString
+        
     }
     
     private func createOutlineStyle() -> NSParagraphStyle
