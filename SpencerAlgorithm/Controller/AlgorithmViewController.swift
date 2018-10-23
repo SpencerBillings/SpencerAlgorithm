@@ -36,6 +36,20 @@ public class AlgorithmController : UIViewController
         let stepFive : String = "Push to GitHub"
         
         let algorithm = [stepOne, stepTwo, stepThree, stepFour, stepFive]
+        
+        let bullet : String = "🅱️"
+    }
+    
+    private func createOutlineStyle() -> NSParagraphStyle
+    {
+        let outlineStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
+        
+        outlineStyle.alignment = .left
+        outlineStyle.defaultTabInterval = 15
+        outlineStyle.firstLineHeadIndent = 20
+        outlineStyle.headIndent = 35
+        
+        return outlineStyle
     }
 }
 
