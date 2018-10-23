@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class AlgorithmController : UIViewController
+public class AlgorithmViewController : UIViewController
 {
     @IBOutlet weak var swiftImage: UIImageView!
     
@@ -29,6 +29,8 @@ public class AlgorithmController : UIViewController
 
     private func formatAlgorithm() -> Void
     {
+        
+        
         let title : String = "App Creation Algorithm"
         
         let stepOne : String = "Begin by choosing the single view project option"
@@ -39,22 +41,22 @@ public class AlgorithmController : UIViewController
         
         let algorithm = [stepOne, stepTwo, stepThree, stepFour, stepFive]
         
-        let attributesDictionary = [NSAttributesStringKey.font : algorithmText.font]
-        let fullAttributesString = NSMutableAttributeString(string: title, attributes: attributesDictionary)
+        let attributesDictionary = [NSAttributedStringKey.font : algorithmText.font]
+        let fullAttributesString = NSMutableAttributedString(string: title, attributes: attributesDictionary)
         
         for step in algorithm
         {
             let bullet : String = "🅱️"
-            let formattedStep : String = "\n\(bullet) \(step)"
+            let formattedStep : String = "\n\(bullet)  \(step)"
             let attributedStringStep : NSMutableAttributedString = NSMutableAttributedString(string : formattedStep)
-            let outlineStyle = createOutlineSytle()
+            let outlineStyle = createOutlineStyle()
             
-            attributedStringStep.addAttributes([NSAttributeString.Key.paragraphStyle : outlineStyle], range: NSMakeRange(0, attributedStringStep.length))
+            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : outlineStyle], range: NSMakeRange(0, attributedStringStep.length))
             
-            fullAttributedString.append(attributedStringStep)
+            fullAttributesString.append(attributedStringStep)
         }
     
-        algorithmText.attributedText = fullAttributedString
+        algorithmText.attributedText = fullAttributesString
         
     }
     

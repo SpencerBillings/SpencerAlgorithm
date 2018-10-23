@@ -10,42 +10,48 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Algorithm View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpencerAlgorithm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AlgorithmViewController" customModule="SpencerAlgorithm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkZ-Ge-EcR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkZ-Ge-EcR">
                                 <rect key="frame" x="0.0" y="344" width="375" height="310"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="Qay-TX-5YD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Algorithm">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name=".SFNSText"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3H0-rg-OvI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3H0-rg-OvI">
                                 <rect key="frame" x="0.0" y="20" width="375" height="310"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="310" id="FIY-NG-x5c"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3H0-rg-OvI" firstAttribute="trailing" secondItem="DkZ-Ge-EcR" secondAttribute="trailing" id="6Tl-mH-80t"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3H0-rg-OvI" secondAttribute="bottom" constant="337" id="AEJ-cs-Jv7"/>
-                            <constraint firstItem="3H0-rg-OvI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Gbh-Nj-xW1"/>
-                            <constraint firstItem="3H0-rg-OvI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="SS6-uY-bhA"/>
-                            <constraint firstItem="3H0-rg-OvI" firstAttribute="leading" secondItem="DkZ-Ge-EcR" secondAttribute="leading" id="hLG-vu-ysq"/>
-                            <constraint firstItem="3H0-rg-OvI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iBR-IQ-q2c"/>
-                            <constraint firstItem="DkZ-Ge-EcR" firstAttribute="top" secondItem="3H0-rg-OvI" secondAttribute="bottom" constant="8" symbolic="YES" id="u5s-wJ-sZn"/>
+                            <constraint firstItem="3H0-rg-OvI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="87W-Mj-tS0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DkZ-Ge-EcR" secondAttribute="bottom" constant="13" id="EcW-Ky-OXK"/>
+                            <constraint firstAttribute="trailing" secondItem="3H0-rg-OvI" secondAttribute="trailing" id="Fiy-88-2XZ"/>
+                            <constraint firstItem="3H0-rg-OvI" firstAttribute="trailing" secondItem="DkZ-Ge-EcR" secondAttribute="trailing" id="Hnt-su-aQN"/>
+                            <constraint firstItem="3H0-rg-OvI" firstAttribute="leading" secondItem="DkZ-Ge-EcR" secondAttribute="leading" id="Rat-aC-fbc"/>
+                            <constraint firstItem="3H0-rg-OvI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="d0V-dm-bMe"/>
+                            <constraint firstItem="DkZ-Ge-EcR" firstAttribute="top" secondItem="3H0-rg-OvI" secondAttribute="bottom" constant="14" id="smQ-lx-CZ3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="algorithmText" destination="DkZ-Ge-EcR" id="Xh3-LZ-tGV"/>
-                        <outlet property="swiftImage" destination="3H0-rg-OvI" id="DRD-9O-mZS"/>
+                        <outlet property="algorithmText" destination="DkZ-Ge-EcR" id="7mU-J2-LTc"/>
+                        <outlet property="swiftImage" destination="3H0-rg-OvI" id="3jU-K2-q2v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
