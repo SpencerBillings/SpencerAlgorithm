@@ -12,6 +12,9 @@
 		EB4AFABF217F6014004618A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4AFABD217F6014004618A0 /* Main.storyboard */; };
 		EB4AFAC1217F6066004618A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4AFAC0217F6066004618A0 /* Assets.xcassets */; };
 		EB4AFAC4217F6067004618A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4AFAC2217F6067004618A0 /* LaunchScreen.storyboard */; };
+		EBC474252188B37F001B8822 /* swiftSample@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC474232188B37E001B8822 /* swiftSample@2x.png */; };
+		EBC474262188B37F001B8822 /* swiftSample@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC474242188B37E001B8822 /* swiftSample@3x.png */; };
+		EBC474282188B4B7001B8822 /* swiftSample@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC474272188B4B7001B8822 /* swiftSample@1x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		EB4AFAC0217F6066004618A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB4AFAC3217F6067004618A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB4AFAC5217F6068004618A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC474232188B37E001B8822 /* swiftSample@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "swiftSample@2x.png"; path = "../../../../../Downloads/swiftSample@2x.png"; sourceTree = "<group>"; };
+		EBC474242188B37E001B8822 /* swiftSample@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "swiftSample@3x.png"; path = "../../../../../Downloads/swiftSample@3x.png"; sourceTree = "<group>"; };
+		EBC474272188B4B7001B8822 /* swiftSample@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "swiftSample@1x.png"; path = "../../../../../Downloads/swiftSample@1x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,9 @@
 			children = (
 				EB4AFAB9217F6014004618A0 /* AppDelegate.swift */,
 				EB4AFAC0217F6066004618A0 /* Assets.xcassets */,
+				EBC474272188B4B7001B8822 /* swiftSample@1x.png */,
+				EBC474232188B37E001B8822 /* swiftSample@2x.png */,
+				EBC474242188B37E001B8822 /* swiftSample@3x.png */,
 				EB4AFAC5217F6068004618A0 /* Info.plist */,
 			);
 			path = Resources;
@@ -148,7 +157,10 @@
 			files = (
 				EB4AFAC4217F6067004618A0 /* LaunchScreen.storyboard in Resources */,
 				EB4AFAC1217F6066004618A0 /* Assets.xcassets in Resources */,
+				EBC474252188B37F001B8822 /* swiftSample@2x.png in Resources */,
+				EBC474262188B37F001B8822 /* swiftSample@3x.png in Resources */,
 				EB4AFABF217F6014004618A0 /* Main.storyboard in Resources */,
+				EBC474282188B4B7001B8822 /* swiftSample@1x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
